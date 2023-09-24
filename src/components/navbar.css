@@ -1,0 +1,45 @@
+* {box-sizing:border-box}
+:root{
+    --red:#E51636;
+    --darkRed: #ab051e;
+    --grey: #7D7D7D;
+}
+.navbar{
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png")
+}
+.Nav-container{
+    height: 20vh; /* Doesnt work */
+}
+/*Hero Section*/
+.hero{
+    
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding-top:15rem;
+}
+
+.logo{
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 2rem;
+}
+.navbar-brand{
+    margin-right: 4rem;
+}
+
+.section{
+    height: 30vh;
+    width: 100%;
+}
+
+.section2{
+    height: 30vh;
+    width: 100%;
+    background-color: #7D7D7D; 
+}
