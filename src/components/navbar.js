@@ -1,6 +1,6 @@
 import { useState } from "react"
 import React  from 'react'
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { FaBeer, FaAlignJustify, FaEllipsis} from "react-icons/fa";
 import '../App.css';
 
@@ -13,11 +13,11 @@ function Navbar() {
         <ul>
             <li className="px-5"><a href="/">CFA Oviedo/North UCF</a></li>
             <li><a href="/">Home</a></li>
-            <li><div><a href="/">About Us</a><div className="dropdown-content"><a href="/">Meet the Operators</a><a href="/">Meet the Team</a></div></div></li>
-            <li><div><a href="/">Training</a><div className="dropdown-content"><a href="/">New Hires</a><a href="/">Path for Growth</a></div></div></li>
+            <li><div><a href="/about">About Us</a><div className="dropdown-content"><a href="/about">Meet the Operators</a><a href="/meet-the-team">Meet the Team</a></div></div></li>
+            <li><div><a href="/">Training</a><div className="dropdown-content"><a href="/new-hires">New Hires</a><a href="/path-for-growth">Path for Growth</a><a href="/pathway">Pathway</a></div></div></li>
             <li><a href="/">Leadership</a></li>
-            <li><a href="/">Events</a></li>
-            <li><div><a href="/">Food Safety</a><div className="dropdown-content"><a href="/">General Rules</a><a href="/">Food Safety Checklist</a><a href="/">SAFE/ERQA</a></div></div></li>
+            <li><a href="/events">Events</a></li>
+            <li><div><a href="/">Food Safety</a><div className="dropdown-content"><a href="/">General Rules</a><a href="/">Food Safety Checklist</a><a href="https://chick-fil-a.compliancemetrix.com/rql/p/ahomevrestauranthomeactivator" target="_blank">SAFE/ERQA</a></div></div></li>
             <li><a href="/">Uniforms</a></li>
         </ul>
     </div>

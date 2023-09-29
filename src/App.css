@@ -122,3 +122,45 @@ ul {
 .h1-text{
     color: #ab051e;
 }
+
+/* Employee Directory Page */
+.employeeGrid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.EmployeeCard{
+  border-radius: 1rem;
+  background-color: black;
+  background-image: linear-gradient(155deg, rgb(255, 255, 255), rgb(64, 66, 73, 1));
+  box-shadow: 2px 2px 5px black;
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  flex-basis: 15%;
+}
+.label{
+  font-size: smaller;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: .5rem;
+}
+.label-1{
+  background-color: rgb(16, 41, 154);
+  color: white;
+}
+.label-2{
+  color: white;
+  background-color:#f9a03c;
+}
+.label-3{
+  color: white;
+  background-color:#ff6905;
+}
+.employee-pic{
+  width: 200px;
+  height: auto;
+}

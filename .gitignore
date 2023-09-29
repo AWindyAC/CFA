@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Airtable API token
-patdkNxehOKyxOMZu.c1d4d80350e8aecfbd7c7769ab8ad02e6dac9d012ae78c3a74915798588430ac
+# Airtable API Personal Access Token
+patdkNxehOKyxOMZu.403d4f860a370ac4bcf27aa56e1af70cb4a1f68f0e11573f18993dc8fce222eb
