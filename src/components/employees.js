@@ -130,7 +130,8 @@ function Employees() {
                 <img className= 'employee-pic' src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/367397880_676672004479725_8684605110063693644_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5614bc&_nc_ohc=MuiARxThQfoAX_t5MgU&_nc_ht=scontent-mia3-2.xx&oh=00_AfDYw_Rfo9bTwICyYfsRed-t1vbOu8SveJV8likiAxV2EA&oe=651C9A61"/>
                 <h3 style={{color:'white'}}>Jerry Williams</h3>
                 <span class="label label-1">Crew Leader</span>
-                <span class="label label-3">FOH</span>
+                <span class="label label-2">FOH</span>
+                <span class="label label-3">BOH</span>
                 <p style={{color:'white'}}>!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusamus iure quae deleniti veniam possimus</p>
             </div> 
           </div>
