@@ -1,33 +1,33 @@
 import React, { useEffect, useState} from 'react';
 import EmployeeCard from './employeeCard';
+import airTableAPI from '../utils/AirTableAPI';
 
 function Employees() {
-  const [employees, setEmployees] = useState([]);
-  var data = [];
+    var data = [];
 
-
+//AirTable Api Documentation they provided, Copy/Paste. Aware of how it all works.
   var Airtable = require('airtable');
   var base = new Airtable({apiKey: 'patdkNxehOKyxOMZu.403d4f860a370ac4bcf27aa56e1af70cb4a1f68f0e11573f18993dc8fce222eb'}).base('appmLn6gvyYRI63TT');
   
-  base('Employee directory').select({
-      // Selecting the first 3 records in All employees:
-      fields: ["Name", "Title", "Department"],
-      view: "All employees"
-  }).eachPage(function page(records, fetchNextPage) {
-      // This function (`page`) will get called for each page of records.
-  
-      records.forEach(function(record) {
-          console.log('Retrieved', record.get('Name'));
-          let employee = {name:record.get('Name'), title:record.get('Title'), department:record.get('Department')};
-          data.push(employee);
-          console.log(data);
-      });
+    base('Employee directory')
+      .select({
+        // Selecting the records in All employees:
+        fields: ["Name", "Title", "Department"],
+        view: "All employees"})
+      .eachPage(function page(records, fetchNextPage) {
+        // This function (`page`) will get called for each page of records.
+        records.forEach(function(record) {
+            console.log('Retrieved', record.get('Name'));
+            let currentEmployee ={name:record.get('Name'), title:record.get('Title'), department:record.get('Department')};
+            data.push(currentEmployee);
+        });
   
       // To fetch the next page of records, call `fetchNextPage`.
       // If there are more records, `page` will get called again.
       // If there are no more records, `done` will get called.
       fetchNextPage();
-  
+      var names = data.map(person => ({text: person.name})); // Checking to see if data was actually stored in the variable
+      console.log(names);
   }, function done(err) {
       if (err) { console.error(err); return; }
   });
@@ -40,11 +40,12 @@ function Employees() {
         </div>
         <div className='employeeGrid'>
           {/* Looping through each record in our table and displaying the data */}
-          { data.map(employee => (
-            <EmployeeCard key={employee._id} employee={employee}/>
-          ))}
+          <ul>
+            {data.map(person => (<li>{person.name}</li>))}
+          </ul>
         </div>
         {/* Manually entering employees for now. Hoping to use Airtable API to auto fill this area with the database and style it. */}
+
         <div className='employeeGrid'>
             <div className='EmployeeCard'>
                 <img className= 'employee-pic' src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/370482280_679998704147055_7900385916676630965_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=49d041&_nc_ohc=zxzV1Haj4M8AX8nS6GS&_nc_oc=AQmagazdiI5947ANO9NKCdR-29oQzpsv3no_3AHV2u1BDNVSh9hVhsbzWeao74G92BI&_nc_ht=scontent-mia3-2.xx&oh=00_AfCYGO7o-RuQdVg6skS0JpFwVJ9dc3mVzK0YjpASYImULQ&oe=651B6640"/>

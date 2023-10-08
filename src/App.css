@@ -1,6 +1,6 @@
 * {box-sizing:border-box}
 :root{
-    --red:#E51636;
+    --red:#DD0031;
     --darkRed: #ab051e;
     --grey: #7D7D7D;
 }
@@ -12,9 +12,7 @@ body{
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
 }
-.Nav-container{
-    height: 20vh; /* Doesnt work */
-}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -25,8 +23,15 @@ ul {
     text-align: center;
   }
   
-  li {
-    float: left;
+  .store-name {
+    text-align: center;
+  }
+  .store-name a{
+    color: white;
+  }
+  .nav-ul li{
+    display: inline-block;
+    
   }
   
   li a {
@@ -97,6 +102,12 @@ ul {
     height: 30vh;
     width: 100%;
     background-color: #7D7D7D; 
+}
+.section-white{
+  height: 30vh;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png")
 }
 
 /*Owner Page*/

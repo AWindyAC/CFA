@@ -1,11 +1,11 @@
 import React from 'react'
 
-function EmployeeCard() {
+const EmployeeCard = ({ employeeData }) => {
   return (
     <div>
         <div className='EmployeeCard' style={{margin:'1rem', alignItems:'center'}}>
             <img className= 'employee-pic' src=""/>
-            <h3 style={{color:'white'}}></h3>
+            <h3 style={{color:'white'}}>{employeeData.name}</h3>
             <span class="label label-1">Director</span>
             <span class="label label-2">FOH</span>
             <span class="label label-3">BOH</span>

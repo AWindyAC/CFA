@@ -7,10 +7,12 @@ import Footer from './components/footer';
 import Employees from './components/employees';
 import Events from './components/events';
 import PathForGrowth from './components/pathForGrowth';
+import Uniforms from './components/uniforms';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import EmployeeCard from './components/employeeCard';
 
 function App() {
+
 
   // Change page on clicks in Navbar
   let component;
@@ -29,6 +31,9 @@ function App() {
       break;
     case "/path-for-growth":
       component = <PathForGrowth />
+      break;
+    case "/uniforms":
+      component = <Uniforms />
       break;
   };
   return (
