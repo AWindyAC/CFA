@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import EmployeeCard from "./employeeCard";
-import airTableAPI from "../utils/AirTableAPI";
 
 function Employees() {
   const [employeesData, setEmployeesData] = useState([]);
@@ -12,7 +11,7 @@ function Employees() {
       "patdkNxehOKyxOMZu.403d4f860a370ac4bcf27aa56e1af70cb4a1f68f0e11573f18993dc8fce222eb",
   }).base("appmLn6gvyYRI63TT");
 
-  base("Employee directory")
+  useEffect(() => { base("Employee directory")
     .select({
       // Selecting the records in All employees:
       fields: ["Name", "Title", "Department"],
@@ -32,6 +31,7 @@ function Employees() {
           return currentEmployee;
         });
         setEmployeesData(data);
+        console.log(data[0].photo);
 
         // To fetch the next page of records, call `fetchNextPage`.
         // If there are more records, `page` will get called again.
@@ -44,7 +44,7 @@ function Employees() {
           return;
         }
       }
-    );
+    )}, []);
 
   return (
     <div>
