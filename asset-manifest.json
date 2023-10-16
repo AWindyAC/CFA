@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/CFA/static/css/main.dfe67023.css",
+    "main.js": "/CFA/static/js/main.0e5a9420.js",
+    "static/media/servers.jpg": "/CFA/static/media/servers.da483258c2f9acb6d373.jpg",
+    "static/media/george_bday.jpg": "/CFA/static/media/george_bday.6c86a35a21993c5fd6f3.jpg",
+    "static/media/Oviedo2.jpg": "/CFA/static/media/Oviedo2.4fff9ba06c75423bf3d6.jpg",
+    "static/media/Oviedo4.jpg": "/CFA/static/media/Oviedo4.8d615f53d78cecc21018.jpg",
+    "static/media/oviedo1.jpg": "/CFA/static/media/oviedo1.172ba58f8ae7849a5cb8.jpg",
+    "static/media/easter.jpg": "/CFA/static/media/easter.bc678eb607002ce44dae.jpg",
+    "static/media/leadership_universal.jpg": "/CFA/static/media/leadership_universal.2323f33493aedeb4ba7f.jpg",
+    "static/media/Duaghter_Son_Knight.jpg": "/CFA/static/media/Duaghter_Son_Knight.fca6661a20c77745e903.jpg",
+    "static/media/director_cruise.jpg": "/CFA/static/media/director_cruise.d77d9739e2dfa0609f52.jpg",
+    "static/media/BOH.jpg": "/CFA/static/media/BOH.ce89022270047ebeee7e.jpg",
+    "static/media/morgan_ben.jpg": "/CFA/static/media/morgan_ben.61e261f90e28e520c251.jpg",
+    "static/media/the_fishes.jpg": "/CFA/static/media/the_fishes.1854ef4826c5d05441d5.jpg",
+    "index.html": "/CFA/index.html",
+    "main.dfe67023.css.map": "/CFA/static/css/main.dfe67023.css.map",
+    "main.0e5a9420.js.map": "/CFA/static/js/main.0e5a9420.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfe67023.css",
+    "static/js/main.0e5a9420.js"
+  ]
+}
