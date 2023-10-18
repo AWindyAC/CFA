@@ -12,6 +12,7 @@ const EmployeeCard = ({ employeeData }) => {
           <span class="label label-1">{employeeData.title}</span><br></br>
           <span class="label label-2">{employeeData.department[0]}</span>
           {employeeData.department[1] ? <span class="label label-3">{employeeData.department[1]}</span> : <></> }
+          {employeeData.department[2] ? <span class="label label-3">{employeeData.department[2]}</span> : <></> }
       </div>
   )
 }

@@ -4,47 +4,37 @@ import EmployeeCard from "./employeeCard";
 function Employees() {
   const [employeesData, setEmployeesData] = useState([]);
 
-  //AirTable Api Documentation they provided, Copy/Paste. Aware of how it all works.
-  var Airtable = require("airtable");
+  var Airtable = require('airtable');
   var base = new Airtable({
-    apiKey:
-      "patdkNxehOKyxOMZu.403d4f860a370ac4bcf27aa56e1af70cb4a1f68f0e11573f18993dc8fce222eb",
-  }).base("appmLn6gvyYRI63TT");
+    apiKey: 'pat9Ta5mPLqZiE3gt.57a08925d5f2630489cc04cec28fe22a38b7593f53de573e2675fd437151aa7d'})
+    .base('appvtPVdJIF7ODnQF');
 
-  useEffect(() => { base("Employee directory")
+  base('Employee directory')
     .select({
-      // Selecting the records in All employees:
-      fields: ["Name", "Title", "Department"],
+      fields: ["Full Name", "Job Title", "Department"],
       view: "All employees",
     })
-    .eachPage(
-      function page(records, fetchNextPage) {
-        // This function (`page`) will get called for each page of records.
-        const data = records.map(function (record) {
-          console.log("Retrieved", record.get("Name"));
+    .eachPage(function page(records, fetchNextPage) {
+      // This function (`page`) will get called for each page of records.
+      const data = records.map(function(record) {
+          console.log('Retrieved', record.get('Full Name'));
           let currentEmployee = {
-            name: record.get("Name"),
-            photo: record.get("Photo"),
-            title: record.get("Title"),
+            name: record.get("Full Name"),
+            title: record.get("Job Title"),
             department: record.get("Department"),
           };
           return currentEmployee;
-        });
-        setEmployeesData(data);
-        console.log(data[0].photo);
+      });
+      setEmployeesData(data); //this causes an undefined error
 
-        // To fetch the next page of records, call `fetchNextPage`.
-        // If there are more records, `page` will get called again.
-        // If there are no more records, `done` will get called.
-        fetchNextPage();
-      },
-      function done(err) {
-        if (err) {
-          console.error(err);
-          return;
-        }
-      }
-    )}, []);
+      // To fetch the next page of records, call `fetchNextPage`.
+      // If there are more records, `page` will get called again.
+      // If there are no more records, `done` will get called.
+      fetchNextPage();
+
+  }, function done(err) {
+      if (err) { console.error(err); return; }
+  });
 
   return (
     <div>
