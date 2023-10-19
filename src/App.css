@@ -13,7 +13,7 @@ body{
     background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
 }
 
-ul {
+.nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -91,9 +91,7 @@ ul {
 }
 
 .section{
-    height: 30vh;
     width: 100%;
-
 }
 
 .section2{
@@ -102,7 +100,7 @@ ul {
     background-color: #7D7D7D; 
 }
 .section-white{
-  height: 30vh;
+
   width: 100%;
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png")
@@ -135,6 +133,7 @@ ul {
     width: 100%;
     padding-left: 10rem;
     padding-right: 10rem;
+    margin-bottom: 2rem;
 }
 .h1-text{
     color: #ab051e;
@@ -204,6 +203,37 @@ ul {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.growthDiv{
+.growthDiv ul{
+  list-style-type: none;
+}
+.progress-bar{
+  background-color: #510611;
+}
+.progress-border{
+  border: solid 1px black;
+  margin: 2rem;
+}
 
+/* Uniform Page */
+
+.uniform-body{
+  text-align: center;
+}
+
+.uniform-body ul{
+  list-style-type: none;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
+  text-align: center;
+}
+.uniform-button{
+  background-color: var(--darkRed);
+  border: none;
+  border-radius: 5rem;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
