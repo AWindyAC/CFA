@@ -42,6 +42,21 @@ body{
     text-decoration: none;
     text-transform: uppercase;
   }
+  li button{
+    background-color: var(--darkRed);
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+  }
+  li button:hover{
+    background-color: #510611;
+  }
+  .active{
+    background-color: #3b0927;
+    border: white;
+  }
   /* Styling li elments when hovering over them */
   li a:hover {
     background-color: #510611;
@@ -56,9 +71,9 @@ body{
     background-color: #280d11;
   }
   /* Show the dropdown menu links when hovering over a li element */
-  li:hover .dropdown-content{
+  /* li:hover .dropdown-content{
     display:block;
-}
+} */
   .active{
     background-color: #510611;
     background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
