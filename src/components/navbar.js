@@ -1,49 +1,39 @@
 import React  from 'react'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../App.css';
 
-function Navbar() {
-  const activeButton = () => {
-    let dropdown = document.getElementsByClassName("dropdown-content");
-    if(dropdown.classList !== "active"){ dropdown.classList.add('active')}
-  }
+function NavBar() {
   return (
-    <div>
-        <h1 className="store-name"><a className='text-decoration-none' href="/">CFA Oviedo/North UCF</a></h1>
-        <ul className="nav-ul">
-            <li><a href="/">Home</a></li>
-            <li>
-              <div>
-                <button className='navButton' onClick={activeButton}>About Us</button>
-                <div className="dropdown-content">
-                <a href="/about">Meet the Operators</a>
-                <a href="/meet-the-team">Meet the Team</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button>Training</button>
-                <div className="dropdown-content">
-                  <a href="/path-for-growth">Path for Growth</a>
-                  <a href="https://www.pathway.cfahome.com/" target="_blank">Pathway</a>
-                </div>
-              </div>
-            </li>
-            {/* <li><a href="/">Leadership</a></li>
-            <li style={{display:"hidden"}}><a href="/events">Events</a></li> */}
-            <li>
-              <div>
-                <button>Food Safety</button>
-                <div className="dropdown-content">
-                  <a href="/">Food Safety Checklist</a>
-                  <a href="https://chick-fil-a.compliancemetrix.com/rql/p/ahomevrestauranthomeactivator" target="_blank">SAFE/ERQA</a>
-                </div>
-              </div>
-            </li>
-            <li><a href="/uniforms">Uniforms</a></li>
-        </ul>
-    </div>
+    <>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto justify-content-center">
+            <Nav.Link href="/">Home</Nav.Link>
+            <NavDropdown title="About Us" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/about">Meet the Operators</NavDropdown.Item>
+              <NavDropdown.Item href="/meet-the-team">Meet the Team</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Training" id="basic-nav-dropdown">
+              <NavDropdown.Item href="https://www.pathway.cfahome.com/">Pathway</NavDropdown.Item>
+              <NavDropdown.Item href="/path-for-growth">Path For Growth</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Food Safety" id="basic-nav-dropdown">
+              <NavDropdown.Item href="https://www.pathway.cfahome.com/">Food Safety Guidelines</NavDropdown.Item>
+              <NavDropdown.Item href="https://chick-fil-a.compliancemetrix.com/rql/p/ahomevrestauranthomeactivator">SAFE/ERQA</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/uniforms">Uniforms</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    </>
   )
 }
 
-export default Navbar
+export default NavBar
