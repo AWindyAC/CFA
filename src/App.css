@@ -25,6 +25,7 @@ body{
   
   .store-name {
     text-align: center;
+    color: white;
   }
   .store-name a{
     color: white;

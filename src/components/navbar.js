@@ -8,9 +8,11 @@ import '../App.css';
 function NavBar() {
   return (
     <>
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="#home" className='store-name'>CFA Oviedo/North UCF</Navbar.Brand>
+      </Container>
+      <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-center">

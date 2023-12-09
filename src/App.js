@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <NavBar/>
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
           <Route exact path='/' element={<Hero />} />
           <Route path='/about' element={<About />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path='/path-for-growth' element={<PathForGrowth />} />
           <Route path='/uniforms' element={<Uniforms />} />
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
     <Footer/>
     </>
   );
