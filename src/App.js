@@ -8,13 +8,13 @@ import Employees from "./components/employees";
 import Events from "./components/events";
 import PathForGrowth from "./components/pathForGrowth";
 import Uniforms from "./components/uniforms";
-import { BrowserRouter as Router, Route, Routes, HashRouter, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Switch, HashRouter, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
     <NavBar/>
-    <HashRouter>
+    <BrowserRouter>
     <Routes>
           <Route exact path='/' element={<Hero />} />
           <Route path='/about' element={<About />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path='/path-for-growth' element={<PathForGrowth />} />
           <Route path='/uniforms' element={<Uniforms />} />
     </Routes>
-    </HashRouter>
+    </BrowserRouter>
     <Footer/>
     </>
   );

@@ -10,7 +10,7 @@ function NavBar() {
     <>
     <Navbar expand="lg" className="">
       <Container>
-      <Navbar.Brand href="#home" className='store-name'>CFA Oviedo/North UCF</Navbar.Brand>
+      <Navbar.Brand href="/" className='store-name'>CFA Oviedo/North UCF</Navbar.Brand>
       </Container>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
