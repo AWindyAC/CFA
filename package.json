@@ -30,7 +30,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "http://AWindyAC.github.io/CFA",
+  "homepage": "http://awindyac.github.io/CFA",
   "browserslist": {
     "production": [
       ">0.2%",
