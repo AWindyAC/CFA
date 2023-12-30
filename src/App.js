@@ -14,16 +14,16 @@ function App() {
   return (
     <>
     <NavBar/>
-    <BrowserRouter>
-    <Routes>
+    <Router>
+      <Routes>
           <Route exact path='/' element={<Hero />} />
           <Route path='/about' element={<About />} />
           <Route path='/meet-the-team' element={<Employees />} />
           <Route path='/events' element={<Events />} />
           <Route path='/path-for-growth' element={<PathForGrowth />} />
           <Route path='/uniforms' element={<Uniforms />} />
-    </Routes>
-    </BrowserRouter>
+      </Routes>
+    </Router>
     <Footer/>
     </>
   );
