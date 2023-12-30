@@ -13,18 +13,18 @@ import { BrowserRouter as Router, Route, Routes, Switch, HashRouter, BrowserRout
 function App() {
   return (
     <>
-    <NavBar/>
     <HashRouter>
-      <Routes>
+    <NavBar/>
+    <Routes>
           <Route exact path='/' element={<Hero />} />
           <Route path='/about' element={<About />} />
           <Route path='/meet-the-team' element={<Employees />} />
           <Route path='/events' element={<Events />} />
           <Route path='/path-for-growth' element={<PathForGrowth />} />
           <Route path='/uniforms' element={<Uniforms />} />
-      </Routes>
-    </HashRouter>
+    </Routes>
     <Footer/>
+    </HashRouter>
     </>
   );
 }
