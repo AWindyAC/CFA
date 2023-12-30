@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CFA/static/css/main.fbf9fd0e.css",
-    "main.js": "/CFA/static/js/main.92f6a048.js",
+    "main.js": "/CFA/static/js/main.bc4a2834.js",
     "static/media/servers.jpg": "/CFA/static/media/servers.da483258c2f9acb6d373.jpg",
     "static/media/george_bday.jpg": "/CFA/static/media/george_bday.6c86a35a21993c5fd6f3.jpg",
     "static/media/Oviedo2.jpg": "/CFA/static/media/Oviedo2.4fff9ba06c75423bf3d6.jpg",
@@ -16,10 +16,10 @@
     "static/media/the_fishes.jpg": "/CFA/static/media/the_fishes.1854ef4826c5d05441d5.jpg",
     "index.html": "/CFA/index.html",
     "main.fbf9fd0e.css.map": "/CFA/static/css/main.fbf9fd0e.css.map",
-    "main.92f6a048.js.map": "/CFA/static/js/main.92f6a048.js.map"
+    "main.bc4a2834.js.map": "/CFA/static/js/main.bc4a2834.js.map"
   },
   "entrypoints": [
     "static/css/main.fbf9fd0e.css",
-    "static/js/main.92f6a048.js"
+    "static/js/main.bc4a2834.js"
   ]
 }
